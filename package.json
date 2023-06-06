@@ -19,7 +19,7 @@
       "require": "./lib/index.js"
     }
   },
-  "type": "commonjs",
+  "type": "module",
   "engines": {
     "node": ">=16"
   },
@@ -28,7 +28,10 @@
     "@fastify/view": "7.4.1",
     "ejs": "3.1.9",
     "fastify": "4.17.0",
-    "fastify-markdown": "0.4.0"
+    "unified": "10.1.2",
+    "remark-parse": "10.0.2",
+    "remark-rehype": "10.1.0",
+    "rehype-stringify": "9.0.3"
   },
   "devDependencies": {
     "c8": "7",
