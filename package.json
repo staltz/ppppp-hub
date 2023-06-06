@@ -26,8 +26,10 @@
   "dependencies": {
     "@fastify/static": "6.10.2",
     "@fastify/view": "7.4.1",
+    "debug": "4.3.4",
     "ejs": "3.1.9",
     "fastify": "4.17.0",
+    "pino": "8.14.1",
     "unified": "10.1.2",
     "remark-parse": "10.0.2",
     "remark-rehype": "10.1.0",
@@ -42,10 +44,10 @@
   },
   "scripts": {
     "setup": "npm install --omit=dev",
-    "start": "node lib/index.js",
+    "start": "DEBUG=*,-avvio node lib/index.js",
     "test": "tape test/*.js | tap-arc --bail",
-    "format-code": "prettier --write \"(lib|test)/**/*.js\"",
-    "format-code-staged": "pretty-quick --staged --pattern \"(lib|test)/**/*.js\"",
+    "format-code": "prettier --write \"(lib|test)/**/*.(c)?js\"",
+    "format-code-staged": "pretty-quick --staged --pattern \"(lib|test)/**/*.(c)?js\"",
     "coverage": "c8 --reporter=lcov npm run test"
   },
   "husky": {
