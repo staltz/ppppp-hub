@@ -29,11 +29,13 @@
     "debug": "4.3.4",
     "ejs": "3.1.9",
     "fastify": "4.17.0",
+    "ppppp-keypair": "github:staltz/ppppp-keypair",
     "pino": "8.14.1",
     "pull-cat": "1.1.11",
     "pull-notify": "0.1.2",
     "pull-stream": "3.7.0",
     "secret-stack": "6.4.1",
+    "secret-handshake-ext": "0.0.4",
     "ssb-caps": "1.1.0",
     "ssb-conn": "6.0.4",
     "unified": "10.1.2",
@@ -44,14 +46,12 @@
   "devDependencies": {
     "c8": "7",
     "prettier": "^2.6.2",
-    "pretty-quick": "^3.1.3",
-    "tap-arc": "^0.3.5",
-    "tape": "^5.6.3"
+    "pretty-quick": "^3.1.3"
   },
   "scripts": {
     "setup": "npm install --omit=dev",
     "start": "DEBUG=*,-avvio node lib/index.js",
-    "test": "tape test/*.js | tap-arc --bail",
+    "test": "node --test",
     "format-code": "prettier --write \"(lib|test)/**/*.(c)?js\"",
     "format-code-staged": "pretty-quick --staged --pattern \"(lib|test)/**/*.(c)?js\"",
     "coverage": "c8 --reporter=lcov npm run test"
