@@ -35,7 +35,7 @@
     "pull-notify": "0.1.2",
     "pull-stream": "3.7.0",
     "secret-stack": "6.4.1",
-    "secret-handshake-ext": "0.0.4",
+    "secret-handshake-ext": "0.0.6",
     "ssb-caps": "1.1.0",
     "ssb-conn": "6.0.4",
     "unified": "10.1.2",
@@ -50,7 +50,7 @@
   },
   "scripts": {
     "setup": "npm install --omit=dev",
-    "start": "DEBUG=*,-avvio node lib/index.js",
+    "start": "DEBUG=*,-avvio,-shse node lib/index.js",
     "test": "node --test",
     "format-code": "prettier --write \"(lib|test)/**/*.(c)?js\"",
     "format-code-staged": "pretty-quick --staged --pattern \"(lib|test)/**/*.(c)?js\"",
