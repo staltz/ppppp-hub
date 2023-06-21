@@ -26,9 +26,12 @@
   "dependencies": {
     "@fastify/static": "6.10.2",
     "@fastify/view": "7.4.1",
+    "atomic-file-rw": "~0.3.0",
+    "bs58": "5.0.0",
     "debug": "4.3.4",
     "ejs": "3.1.9",
     "fastify": "4.17.0",
+    "ppppp-caps": "github:staltz/ppppp-caps",
     "ppppp-keypair": "github:staltz/ppppp-keypair",
     "pino": "8.14.1",
     "pull-cat": "1.1.11",
