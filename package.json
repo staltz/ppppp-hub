@@ -37,7 +37,7 @@
     "pull-cat": "1.1.11",
     "pull-notify": "0.1.2",
     "pull-stream": "3.7.0",
-    "secret-stack": "ssbc/secret-stack#bare-mode",
+    "secret-stack": "7.1.0",
     "secret-handshake-ext": "0.0.8",
     "ssb-caps": "1.1.0",
     "ssb-conn": "6.0.4",
