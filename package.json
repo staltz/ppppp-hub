@@ -33,6 +33,7 @@
     "fastify": "4.25.2",
     "ppppp-caps": "github:staltz/ppppp-caps",
     "ppppp-keypair": "github:staltz/ppppp-keypair",
+    "ppppp-net": "github:staltz/ppppp-net",
     "pino": "8.17.2",
     "pull-cat": "1.1.11",
     "pull-notify": "0.1.2",
